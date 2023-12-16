@@ -23,7 +23,7 @@ main {
 }
 
 main > div {
-  flex: 2 1 auto;
+  flex: 1 2 0%;
 }
 
 h1 {
