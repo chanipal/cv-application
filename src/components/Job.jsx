@@ -41,7 +41,7 @@ const Job = ({ setJob }) => {
         </label>
         <label>
           Description
-          <textarea value={description} onChange={setDescription} />
+          <textarea value={description} onChange={e => setDescription(e.target.value)} />
         </label>
         <button type='button' onClick={updJob}>Save</button>
       </form>
