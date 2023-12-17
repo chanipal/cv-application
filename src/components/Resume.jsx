@@ -33,20 +33,29 @@ const Resume = ({ general, education, job }) => {
 
       <div>
         <h2>Education</h2>
-          <p>{degree}</p>
-          <p>{school}</p>
-          <p>{city}</p>
-          <p>{country}</p>
-          <p>{education.startDate}</p>
-          <p>{education.endDate}</p>
+        <div className='section-container'>
+          <div className='left-column'>
+              <p>{education.startDate}-{education.endDate ? education.endDate : 'present'}</p>
+              <p>{city}, {country}</p>
+          </div>
+          <div className='right-column'>
+              <p>Degree: <span>{degree}</span></p>
+              <p>{school}</p>
+          </div>
+        </div>
       </div>
       <div>
         <h2>Experience</h2>
-        <p>{jobTitle}</p>
-        <p>{company}</p>
-        <p>{job.startDate}</p>
-        <p>{job.endDate}</p>
-        <p>{description}</p>
+        <div className='section-container'>
+          <div className='left-column'>
+            <p>{job.startDate}-{job.endDate ? job.endDate : 'present'}</p>
+            <p>{company}</p>
+          </div>
+          <div className='right-column'>
+            <p>{jobTitle}</p>
+            <p>{description}</p>
+          </div>
+        </div>
       </div>
     </div>
   );
