@@ -17,7 +17,9 @@ function App() {
       <Header />
       <main>
         <div id='input-data'>
-          <Export />
+          <Export
+            name={general.fullName}
+          />
           <General setGeneral={setGeneral} />
           <Education setEducation={setEducation} />
           <Job setJob={setJob} />
