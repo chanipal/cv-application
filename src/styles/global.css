@@ -29,3 +29,17 @@ main > div {
 h1 {
   margin: 0.25em;
 }
+
+button[type=button] {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.25em 3em;
+  background-color: black;
+  color: white;
+}
+
+button[type=button]:hover {
+  cursor: pointer;
+  box-shadow: 1px 7px 19px -6px rgba(0,0,0,0.58);
+  transform: translateY(-2px);
+}
